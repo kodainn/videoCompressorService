@@ -1,0 +1,11 @@
+version: '3'
+services:
+  python_ubuntu:
+    image: python_ubuntu
+    volumes:
+      - type: bind
+        source: .
+        target: /video_compressor_service
+    stdin_open: true
+    tty: true
+    command: bash
